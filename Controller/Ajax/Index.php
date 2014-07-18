@@ -1,5 +1,6 @@
 <?php
 /**
+ *
  * Magento
  *
  * NOTICE OF LICENSE
@@ -21,9 +22,9 @@
  * @copyright   Copyright (c) 2014 X.commerce, Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-namespace Magento\Translation\Controller;
+namespace Magento\Translation\Controller\Ajax;
 
-class Ajax extends \Magento\Framework\App\Action\Action
+class Index extends \Magento\Framework\App\Action\Action
 {
     /**
      * @var \Magento\Framework\Translate\Inline\ParserInterface
@@ -48,7 +49,7 @@ class Ajax extends \Magento\Framework\App\Action\Action
      *
      * @return void
      */
-    public function indexAction()
+    public function execute()
     {
         $translate = (array)$this->getRequest()->getPost('translate');
 
