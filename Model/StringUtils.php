@@ -7,25 +7,25 @@
 /**
  * String translation model
  *
- * @method \Magento\Translation\Model\Resource\String _getResource()
- * @method \Magento\Translation\Model\Resource\String getResource()
+ * @method \Magento\Translation\Model\Resource\StringUtils _getResource()
+ * @method \Magento\Translation\Model\Resource\StringUtils getResource()
  * @method int getStoreId()
- * @method \Magento\Translation\Model\String setStoreId(int $value)
+ * @method \Magento\Translation\Model\StringUtils setStoreId(int $value)
  * @method string getTranslate()
- * @method \Magento\Translation\Model\String setTranslate(string $value)
+ * @method \Magento\Translation\Model\StringUtils setTranslate(string $value)
  * @method string getLocale()
- * @method \Magento\Translation\Model\String setLocale(string $value)
+ * @method \Magento\Translation\Model\StringUtils setLocale(string $value)
  */
 namespace Magento\Translation\Model;
 
-class String extends \Magento\Framework\Model\AbstractModel
+class StringUtils extends \Magento\Framework\Model\AbstractModel
 {
     /**
      * @return void
      */
     protected function _construct()
     {
-        $this->_init('Magento\Translation\Model\Resource\String');
+        $this->_init('Magento\Translation\Model\Resource\StringUtils');
     }
 
     /**
